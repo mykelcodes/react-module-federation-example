@@ -1,0 +1,17 @@
+{
+  "name": "react-micro-frontend-example",
+  "description": "A simple intro to micro frontend using Module Fedaration",
+  "workspaces": {
+    "packages": [
+      "react-host",
+      "react-remote"
+    ]
+  },
+  "scripts": {
+    "start": "npm run start:host & npm run start:remote",
+    "start:host": "cd ./react-host && npm start",
+    "start:remote": "cd ./react-remote && npm start",
+    "start:all": "npm run start"
+  },
+  "author": "Michael Olawale"
+}
